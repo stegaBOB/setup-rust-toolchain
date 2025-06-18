@@ -212,7 +212,7 @@ runs:
 
     - name: Setup Rust Caching
       if: inputs.cache == 'true'
-      uses: stegaBOB/rust-cache@master
+      uses: stegaBOB/rust-cache@stegaBOB/feat/warpbuild
       with:
         workspaces: ${{inputs.cache-workspaces}}
         cache-directories: ${{inputs.cache-directories}}
